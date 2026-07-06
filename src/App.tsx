@@ -43,7 +43,7 @@ export function App() {
           <div className="hero-inner">
             <p className="hello">Hello, I&apos;m</p>
             <h1>Sol Abrian.</h1>
-            <p className="role">I build interactive web apps and data-driven tools.</p>
+            <p className="role">I build interactive web doohickeys and useful tools.</p>
           </div>
           <ScrollHint />
         </section>
@@ -52,8 +52,9 @@ export function App() {
           <h2>About</h2>
           <p className="about-text">
             I&apos;m a developer focused on turning complex data into clear, usable experiences
-            from 3D visualizations and fitness tools to analysis apps. I like projects where design,
-            logic, and real-world information meet.
+            from 3D visualizations of natural disasters to article by article politcal bias analysis. I am passionate about 
+            projects pertaining to environmental conservation/safety and media bias, however I am eager to apply 
+            myself to any project I perceive to be ethical and beneficial to my community.
           </p>
           <ul className="skills">
             {skills.map((s) => (
