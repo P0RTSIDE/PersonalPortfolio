@@ -1,4 +1,4 @@
-export type PreviewId = "globe" | "blindspot" | "toes-down";
+export type PreviewId = "globe" | "blindspot" | "toes-down" | "deforestation";
 
 export interface Project {
   title: string;
@@ -10,6 +10,15 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    title: "Forest Clearing & Permit Map",
+    subtitle: "Environmental geospatial analysis",
+    description:
+      "Detects vegetation loss in southern Pará via Sentinel-2 change detection (2019 vs 2023), then cross-references cleared patches against ANM SIGMINE mining permits. NDVI baseline live on the map; Siamese U-Net planned. A public-data flagging tool, not a legal determination.",
+    url: "https://illegal-deforestation-detector.vercel.app/",
+    preview: "deforestation",
+    image: "/projects/deforestation.png"
+  },
   {
     title: "Globe of Earthquakes",
     subtitle: "Interactive data visualization",
@@ -41,9 +50,11 @@ export const projects: Project[] = [
 export const skills = [
   "JavaScript",
   "TypeScript",
+  "Python",
   "React",
   "Node.js",
   "Three.js",
+  "Earth Engine",
   "Data Viz",
   "Vercel",
   "Git"

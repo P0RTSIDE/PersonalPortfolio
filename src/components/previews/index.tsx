@@ -1,5 +1,6 @@
 import type { PreviewId } from "../../projects";
 import { BlindspotPreview } from "./BlindspotPreview";
+import { DeforestationPreview } from "./DeforestationPreview";
 import { GlobePreview } from "./GlobePreview";
 import { ToesDownPreview } from "./ToesDownPreview";
 
@@ -11,5 +12,7 @@ export function ProjectPreview({ id }: { id: PreviewId }) {
       return <BlindspotPreview />;
     case "toes-down":
       return <ToesDownPreview />;
+    case "deforestation":
+      return <DeforestationPreview />;
   }
 }
