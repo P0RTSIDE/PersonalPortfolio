@@ -1,4 +1,4 @@
-export type PreviewId = "globe" | "blindspot" | "toes-down" | "deforestation";
+export type PreviewId = "globe" | "blindspot" | "toes-down" | "deforestation" | "congress";
 
 export interface Project {
   title: string;
@@ -20,6 +20,15 @@ export const projects: Project[] = [
     image: "/projects/deforestation.png"
   },
   {
+    title: "Congressional Stock-Legislation Timing",
+    subtitle: "Government transparency tool",
+    description:
+      "Maps congressional stock disclosures to legislation votes. Surfaces timing signals when members trade tickers linked to a bill before the roll call, with party-split stats and bill-to-sector mapping. Timing overlaps only, not proof of insider trading.",
+    url: "https://congressional-stock-purchase-tracke.vercel.app/",
+    preview: "congress",
+    image: "/projects/congress.png"
+  },
+  {
     title: "Globe of Earthquakes",
     subtitle: "Interactive data visualization",
     description:
@@ -29,14 +38,6 @@ export const projects: Project[] = [
     image: "/projects/globe.png"
   },
   {
-    title: "Toes Down",
-    subtitle: "Fitness app",
-    description: "Web version of heads up with emphasis on custom packs, minimalist UI, and studying.",
-    url: "https://toes-down-deployed.vercel.app/",
-    preview: "toes-down",
-    image: "/projects/toes-down.png"
-  },
-  {
     title: "Blindspot Tracker",
     subtitle: "Media analysis tool",
     description:
@@ -44,6 +45,14 @@ export const projects: Project[] = [
     url: "https://political-bias-analysis.vercel.app/analyze",
     preview: "blindspot",
     image: "/projects/blindspot.png"
+  },
+  {
+    title: "Toes Down",
+    subtitle: "Fitness app",
+    description: "Web version of heads up with emphasis on custom packs, minimalist UI, and studying.",
+    url: "https://toes-down-deployed.vercel.app/",
+    preview: "toes-down",
+    image: "/projects/toes-down.png"
   }
 ];
 
