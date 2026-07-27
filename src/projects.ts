@@ -1,4 +1,4 @@
-export type PreviewId = "globe" | "blindspot" | "toes-down" | "deforestation" | "congress";
+export type PreviewId = "globe" | "blindspot" | "toes-down" | "deforestation";
 
 export interface Project {
   title: string;
@@ -18,15 +18,6 @@ export const projects: Project[] = [
     url: "https://illegal-deforestation-detector.vercel.app/",
     preview: "deforestation",
     image: "/projects/deforestation.png"
-  },
-  {
-    title: "Congressional Stock-Legislation Timing",
-    subtitle: "Government transparency tool",
-    description:
-      "Maps congressional stock disclosures to legislation votes. Surfaces timing signals when members trade tickers linked to a bill before the roll call, with party-split stats and bill-to-sector mapping. Timing overlaps only, not proof of insider trading.",
-    url: "https://congressional-stock-purchase-tracke.vercel.app/",
-    preview: "congress",
-    image: "/projects/congress.png"
   },
   {
     title: "Globe of Earthquakes",
