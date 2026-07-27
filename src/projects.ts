@@ -1,4 +1,4 @@
-export type PreviewId = "globe" | "blindspot" | "toes-down" | "deforestation";
+export type PreviewId = "globe" | "blindspot" | "toes-down" | "deforestation" | "filerrank";
 
 export interface Project {
   title: string;
@@ -18,6 +18,15 @@ export const projects: Project[] = [
     url: "https://illegal-deforestation-detector.vercel.app/",
     preview: "deforestation",
     image: "/projects/deforestation.png"
+  },
+  {
+    title: "FILERANK",
+    subtitle: "SEC fundamentals research",
+    description:
+      "Ranks small and micro-cap companies by verifiable fundamentals from SEC filings. Revenue, cash runway, and commercial evidence drive the score, not social buzz. Informational research only, not financial advice.",
+    url: "https://penny-stock-tracker.vercel.app/",
+    preview: "filerrank",
+    image: "/projects/filerrank.png"
   },
   {
     title: "Globe of Earthquakes",
