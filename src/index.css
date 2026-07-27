@@ -314,6 +314,92 @@ a {
   pointer-events: none;
 }
 
+/* FILERANK mini UI */
+.preview--filerrank {
+  padding: 1rem 1.1rem;
+  background: linear-gradient(180deg, #0c0f14 0%, #07090c 100%);
+  font-family: var(--mono);
+  overflow: hidden;
+}
+
+.fr-kicker {
+  margin: 0;
+  font-size: 0.4rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #6e7681;
+}
+
+.fr-brand {
+  margin: 0.25rem 0 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: #e6edf3;
+}
+
+.fr-tagline {
+  margin: 0.35rem 0 0.75rem;
+  font-size: 0.48rem;
+  line-height: 1.4;
+  color: #8b949e;
+  letter-spacing: 0.02em;
+}
+
+.fr-table {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.48rem;
+  color: #c9d1d9;
+}
+
+.fr-head,
+.fr-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1.4fr 1.2fr 1.4fr;
+  gap: 0.35rem;
+  align-items: center;
+  padding: 0.3rem 0.4rem;
+  border-radius: 3px;
+}
+
+.fr-head {
+  color: #6e7681;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.4rem;
+}
+
+.fr-row {
+  background: rgba(22, 27, 34, 0.85);
+  border: 1px solid #21262d;
+  transition: border-color 0.25s ease, background 0.25s ease;
+}
+
+.fr-row--active {
+  border-color: #388bfd;
+  background: rgba(56, 139, 253, 0.08);
+}
+
+.fr-score {
+  color: #3fb950;
+  font-weight: 500;
+}
+
+.fr-ticker {
+  font-weight: 600;
+  color: #e6edf3;
+}
+
+.fr-note {
+  margin: 0.65rem 0 0;
+  font-size: 0.38rem;
+  color: #6e7681;
+  letter-spacing: 0.04em;
+}
+
 /* Forest clearing map mini UI */
 .preview--deforestation {
   background: #0d1a12;
