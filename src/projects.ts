@@ -1,4 +1,4 @@
-export type PreviewId = "globe" | "blindspot" | "toes-down" | "deforestation" | "filerrank";
+export type PreviewId = "globe" | "blindspot" | "toes-down" | "deforestation" | "filerrank" | "ripple";
 
 export interface Project {
   title: string;
@@ -45,6 +45,15 @@ export const projects: Project[] = [
     url: "https://political-bias-analysis.vercel.app/analyze",
     preview: "blindspot",
     image: "/projects/blindspot.png"
+  },
+  {
+    title: "Ripple",
+    subtitle: "Interactive pond & music studio",
+    description:
+      "Interactive pond with fish, food, tools, and procedural sound tied to water ripples. Switch to rain-on-glass mode for a built-in rhythm studio with saveable loops that play quietly under the pond.",
+    url: "https://ripple-nine-chi.vercel.app/",
+    preview: "ripple",
+    image: "/projects/ripple.png"
   },
   {
     title: "Toes Down",

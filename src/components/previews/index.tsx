@@ -3,6 +3,7 @@ import { BlindspotPreview } from "./BlindspotPreview";
 import { DeforestationPreview } from "./DeforestationPreview";
 import { FilerrankPreview } from "./FilerrankPreview";
 import { GlobePreview } from "./GlobePreview";
+import { RipplePreview } from "./RipplePreview";
 import { ToesDownPreview } from "./ToesDownPreview";
 
 export function ProjectPreview({ id }: { id: PreviewId }) {
@@ -17,5 +18,7 @@ export function ProjectPreview({ id }: { id: PreviewId }) {
       return <DeforestationPreview />;
     case "filerrank":
       return <FilerrankPreview />;
+    case "ripple":
+      return <RipplePreview />;
   }
 }
