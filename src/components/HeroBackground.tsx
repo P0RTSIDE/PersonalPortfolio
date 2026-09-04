@@ -59,7 +59,6 @@ export function HeroBackground() {
 
       // Fade and soften as you scroll down the page
       container.style.opacity = String(0.82 - progress * 0.52);
-      container.style.transform = `translateY(${window.scrollY * 0.12}px)`;
       container.style.setProperty("--scroll-progress", String(progress));
 
       if (pJS) {
