@@ -20,6 +20,15 @@ export const projects: Project[] = [
     image: "/projects/deforestation.png"
   },
   {
+    title: "Ripple",
+    subtitle: "Interactive pond & music studio",
+    description:
+      "Interactive pond with fish, food, tools, and procedural sound tied to water ripples. Switch to rain-on-glass mode for a built-in rhythm studio with saveable loops that play quietly under the pond.",
+    url: "https://ripplefish.xyz/",
+    preview: "ripple",
+    image: "/projects/ripple.png"
+  },
+  {
     title: "FILERANK",
     subtitle: "SEC fundamentals research",
     description:
@@ -47,18 +56,9 @@ export const projects: Project[] = [
     image: "/projects/blindspot.png"
   },
   {
-    title: "Ripple",
-    subtitle: "Interactive pond & music studio",
-    description:
-      "Interactive pond with fish, food, tools, and procedural sound tied to water ripples. Switch to rain-on-glass mode for a built-in rhythm studio with saveable loops that play quietly under the pond.",
-    url: "https://ripple-nine-chi.vercel.app/",
-    preview: "ripple",
-    image: "/projects/ripple.png"
-  },
-  {
     title: "Toes Down",
-    subtitle: "Fitness app",
-    description: "Web version of heads up with emphasis on custom packs, minimalist UI, and studying.",
+    subtitle: "Study tool",
+    description: "Web version of Heads Up focused on active recall, custom study packs, and a minimalist UI built for studying.",
     url: "https://toes-down-deployed.vercel.app/",
     preview: "toes-down",
     image: "/projects/toes-down.png"
