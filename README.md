@@ -6,6 +6,7 @@ Portfolio site for interactive web applications and data tools. The page lists s
 
 | Project | What it is | Live |
 | --- | --- | --- |
+| EJScreen Rebuilt in SQL | Independent SQL reconstruction of EPA EJScreen 2.3 indexes and indicators, with disclosed gaps. Not affiliated with EPA | Case study at `/ejscreen` on this site |
 | Forest Clearing & Permit Map | Sentinel-2 vegetation loss in southern Pará, joined to public mining and logging permits | [illegal-deforestation-detector.vercel.app](https://illegal-deforestation-detector.vercel.app/) |
 | FILERANK | Small and micro-cap ranking from SEC filing fundamentals. Research display, not financial advice | [penny-stock-tracker.vercel.app](https://penny-stock-tracker.vercel.app/) |
 | Ripple | Pond simulation whose impacts also drive procedural sound, plus a rain-on-glass rhythm studio | [ripplefish.xyz](https://ripplefish.xyz/) |

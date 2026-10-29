@@ -1,4 +1,11 @@
-export type PreviewId = "globe" | "blindspot" | "toes-down" | "deforestation" | "filerrank" | "ripple";
+export type PreviewId =
+  | "globe"
+  | "blindspot"
+  | "toes-down"
+  | "deforestation"
+  | "filerrank"
+  | "ripple"
+  | "ejscreen";
 
 export interface Project {
   title: string;
@@ -7,9 +14,20 @@ export interface Project {
   url: string;
   preview: PreviewId;
   image?: string;
+  /** When true, open in the same tab (portfolio case study pages). */
+  internal?: boolean;
 }
 
 export const projects: Project[] = [
+  {
+    title: "EJScreen Rebuilt in SQL",
+    subtitle: "Environmental justice data reconstruction",
+    description:
+      "Independent SQL rebuild of EPA EJScreen 2.3 indexes, percentiles, and indicators from archived public tables. Matches Tier 1 indexes, ACS demographics, lead paint, ozone, NO2, PM2.5, toxic air, and UST. Remaining vintage gaps are disclosed on the case study. Not affiliated with EPA.",
+    url: "/ejscreen",
+    preview: "ejscreen",
+    internal: true
+  },
   {
     title: "Forest Clearing & Permit Map",
     subtitle: "Environmental geospatial analysis",
@@ -69,6 +87,7 @@ export const skills = [
   "JavaScript",
   "TypeScript",
   "Python",
+  "SQL",
   "React",
   "Node.js",
   "Three.js",

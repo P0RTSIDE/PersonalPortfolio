@@ -944,6 +944,264 @@ a {
   border-radius: 1px;
 }
 
+/* EJScreen mini UI */
+.preview--ejscreen {
+  padding: 1rem 1.1rem;
+  background: linear-gradient(180deg, #0c1210 0%, #070b09 100%);
+  font-family: var(--mono);
+  overflow: hidden;
+}
+
+.ej-kicker {
+  margin: 0;
+  font-size: 0.4rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #6e7681;
+}
+
+.ej-brand {
+  margin: 0.25rem 0 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #e6edf3;
+}
+
+.ej-tagline {
+  margin: 0.35rem 0 0.75rem;
+  font-size: 0.48rem;
+  line-height: 1.4;
+  color: #8b949e;
+}
+
+.ej-table {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.48rem;
+  color: #c9d1d9;
+}
+
+.ej-head,
+.ej-row {
+  display: grid;
+  grid-template-columns: 1.6fr 0.7fr;
+  gap: 0.35rem;
+  align-items: center;
+  padding: 0.3rem 0.4rem;
+  border-radius: 3px;
+}
+
+.ej-head {
+  color: #6e7681;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.4rem;
+}
+
+.ej-row {
+  background: rgba(22, 27, 34, 0.85);
+  border: 1px solid #21262d;
+  transition: border-color 0.25s ease, background 0.25s ease;
+}
+
+.ej-row--active {
+  border-color: #3fb950;
+  background: rgba(63, 185, 80, 0.08);
+}
+
+.ej-status {
+  font-weight: 500;
+  text-align: right;
+}
+
+.ej-status--ok {
+  color: #3fb950;
+}
+
+.ej-status--gap {
+  color: #d29922;
+}
+
+.ej-note {
+  margin: 0.65rem 0 0;
+  font-size: 0.38rem;
+  color: #6e7681;
+  letter-spacing: 0.04em;
+}
+
+/* --- Case study (EJScreen) --- */
+.case-study {
+  padding-top: 2.5rem;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--accent);
+  text-decoration: none;
+  margin-bottom: 2.5rem;
+  transition: gap 0.2s;
+}
+
+.back-link:hover {
+  gap: 0.65rem;
+}
+
+.case-hero {
+  margin-bottom: 2rem;
+}
+
+.case-kicker {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 0.75rem;
+}
+
+.case-hero h1 {
+  font-size: clamp(1.85rem, 5vw, 2.6rem);
+  font-weight: 600;
+  color: var(--heading);
+  margin: 0 0 1rem;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.case-lede {
+  margin: 0;
+  max-width: 36rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.disclaimer-banner {
+  margin: 0 0 3rem;
+  padding: 1.1rem 1.25rem;
+  border-left: 2px solid var(--accent);
+  background: rgba(63, 185, 80, 0.05);
+}
+
+.disclaimer-label {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 0.5rem;
+}
+
+.disclaimer-banner p:last-child {
+  margin: 0;
+  max-width: 40rem;
+}
+
+.case-section {
+  margin-bottom: 2.75rem;
+}
+
+.case-section h2 {
+  font-size: 0.75rem;
+  font-family: var(--mono);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 1rem;
+}
+
+.case-section p {
+  margin: 0 0 1rem;
+  max-width: 40rem;
+}
+
+.case-list,
+.gap-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 40rem;
+}
+
+.case-list li,
+.gap-list li {
+  position: relative;
+  padding: 0.65rem 0 0.65rem 1.1rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+
+.case-list li:last-child,
+.gap-list li:last-child {
+  border-bottom: none;
+}
+
+.case-list li::before,
+.gap-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.15rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 1px;
+  background: var(--accent);
+}
+
+.gap-list li::before {
+  background: #d29922;
+}
+
+.gap-list strong {
+  color: var(--heading);
+  font-weight: 600;
+}
+
+.case-links {
+  list-style: none;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.case-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--accent);
+  text-decoration: none;
+  transition: gap 0.2s;
+}
+
+.case-links a:hover {
+  gap: 0.65rem;
+}
+
+.case-footer {
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  margin-bottom: 2rem;
+}
+
+.case-footer p {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin: 0;
+}
+
 /* --- Contact --- */
 .contact-text {
   margin: 0 0 1.25rem;
