@@ -16,6 +16,8 @@ function Arrow() {
 }
 
 export function ProjectCard({ project }: { project: Project }) {
+  const linkLabel = project.internal ? "Case study" : "Live app";
+
   return (
     <article className="project">
       <div className="project-visual">
@@ -28,8 +30,13 @@ export function ProjectCard({ project }: { project: Project }) {
         </header>
         <p className="project-desc">{project.description}</p>
         <div className="project-links">
-          <a href={project.url} target="_blank" rel="noopener noreferrer">
-            Live app
+          <a
+            href={project.url}
+            {...(project.internal
+              ? {}
+              : { target: "_blank", rel: "noopener noreferrer" })}
+          >
+            {linkLabel}
             <Arrow />
           </a>
         </div>
